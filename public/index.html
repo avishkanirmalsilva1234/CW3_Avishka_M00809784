@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+        <!-- Importing the personal styling sheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="manifest" href="AfterSchoolActivities.webmanifest">
+        <script>
+          if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('service-worker.js');
+          };
+      </script>
   </head>
   <body>
     <noscript>
